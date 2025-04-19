@@ -1,0 +1,1243 @@
+html body main .container .main-middle .popular_categories .categories div a, html body header .header-botton ul li a, html body header .header-middle .btn_catalog .catalog .categories .content ul li a {
+  color: #24150e;
+  text-decoration: none;
+}
+
+html body main .container .main-middle .brends .top-brends div, html body main .container .main-middle .popular_categories .categories div {
+  border: 0.2vw solid #f2ebe9;
+  border-radius: 1.7vw;
+  transition: box-shadow 0.3s ease;
+}
+
+html {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1.2vw;
+}
+html p {
+  margin: 0;
+  padding: 0;
+}
+html body {
+  font-family: "Rubik", scans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #24150e;
+}
+html body *::-webkit-scrollbar {
+  width: 4px;
+}
+html body *::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+html body *::-webkit-scrollbar-thumb {
+  background-color: #e9e5e2;
+  border-radius: 10px;
+}
+html body input {
+  font-family: "Rubik", scans-serif;
+}
+html body header {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+}
+html body header .header-top {
+  background-color: #24150e;
+  width: 100%;
+  font-size: 0.9vw;
+}
+html body header .header-top .container {
+  color: #f2ebe9;
+  margin: 0.5% 12% 0.5% 12%;
+  display: flex;
+  flex-direction: row;
+}
+html body header .header-top .container .location {
+  flex-grow: 6;
+}
+html body header .header-top .container .tel, html body header .header-top .container .email, html body header .header-top .container .work_time {
+  text-align: right;
+  flex-grow: 1;
+}
+html body header .header-top .container div svg, html body header .header-top .container div p {
+  display: inline-block;
+}
+html body header .header-top .container .location a, html body header .header-top .container .email a, html body header .header-top .container .tel a {
+  color: #f2ebe9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body header .header-top .container .location :hover, html body header .header-top .container .email :hover, html body header .header-top .container .tel :hover {
+  color: #8c7462;
+}
+html body header .header-top .container .location :active, html body header .header-top .container .email :active, html body header .header-top .container .tel :active {
+  color: #8e6248;
+}
+@media (min-width: 1024px) and (max-width: 1152px) {
+  html body header .header-top {
+    font-size: 1.05vw;
+  }
+  html body header .header-top .container {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+}
+html body header .header-middle .container {
+  position: relative;
+  margin: 0.5% 12% 0.5% 12%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 1% 0 0.5% 0;
+}
+html body header .header-middle .container .logo {
+  flex-grow: 1;
+}
+html body header .header-middle .container .logo span {
+  color: #8e6248;
+}
+html body header .header-middle .container .logo a {
+  color: #3f2a1d;
+  text-decoration: none;
+}
+html body header .header-middle .container .logo a p {
+  padding-right: 35%;
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+html body header .header-middle .container .catalog-search {
+  flex-grow: 5;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+html body header .header-middle .container .catalog-search .catalog button {
+  height: 3.3vw;
+  width: 3.3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 0.8vw;
+  transition: box-shadow 0.3s ease;
+}
+html body header .header-middle .container .catalog-search .catalog button svg {
+  fill: #24150e;
+}
+html body header .header-middle .container .catalog-search .catalog button:hover {
+  box-shadow: 0 0 0.2vw #8c7462;
+}
+html body header .header-middle .container .catalog-search .catalog button:active {
+  box-shadow: 0 0 0.3vw #8e6248;
+}
+html body header .header-middle .container .catalog-search .catalog button:focus {
+  box-shadow: 0 0 0.4vw #8e6248;
+}
+html body header .header-middle .container .catalog-search .search {
+  width: 85%;
+}
+html body header .header-middle .container .catalog-search .search form {
+  background-color: none;
+  height: 3.3vw;
+}
+html body header .header-middle .container .catalog-search .search form div {
+  border: none;
+  border-radius: 0.9vw;
+  background-color: #f6f6f6;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+}
+html body header .header-middle .container .catalog-search .search form div input {
+  background-color: #f6f6f6;
+  font-size: 1.3vw;
+  margin: 0px;
+  padding: 0 0 0 1vw;
+  border-radius: 1.7vw;
+  outline: 0;
+  width: 90%;
+  height: 100%;
+  border: none;
+}
+html body header .header-middle .container .catalog-search .search form div button {
+  all: unset;
+  margin: 0;
+  margin-right: 1vw;
+  height: 100%;
+  width: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body header .header-middle .container .catalog-search .search form div button svg {
+  fill: #24150e;
+  width: 1.8vw;
+  height: 1.8vw;
+}
+html body header .header-middle .container .catalog-search .search form div:has(input:focus) {
+  box-shadow: 0 0 0.2vw #8c7462;
+}
+html body header .header-middle .container .icons {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+html body header .header-middle .container .icons div a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+html body header .header-middle .container .icons div a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body header .header-middle .container .icons div :hover {
+  color: #8c7462;
+}
+html body header .header-middle .container .icons div :active {
+  color: #8e6248;
+}
+html body header .header-middle .btn_catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+html body header .header-middle .btn_catalog .catalog {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  position: absolute;
+  z-index: -999;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  background-color: #f2ebe9;
+  border-radius: 1.7vw;
+  box-shadow: 0 0 1.5vw #8c7462;
+  padding: 2vw;
+  width: 72%;
+  height: 32vw;
+}
+html body header .header-middle .btn_catalog .catalog .categories {
+  width: 40%;
+}
+html body header .header-middle .btn_catalog .catalog .categories .content {
+  height: 32vw;
+  overflow-y: scroll;
+  padding-right: 1vw;
+}
+html body header .header-middle .btn_catalog .catalog .categories .content ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 0.7vw;
+}
+html body header .header-middle .btn_catalog .catalog .categories .content ul li {
+  display: inline-block;
+  margin-left: 0;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  border-radius: 0.6vw;
+  padding: 0.9vw;
+  border: 0.1px solid #f2ebe9;
+  transition: border 0.2s ease;
+}
+html body header .header-middle .btn_catalog .catalog .categories .content ul li a {
+  font-size: 1.2vw;
+}
+html body header .header-middle .btn_catalog .catalog .categories .content ul li:hover {
+  border: 0.1vw solid #8c7462;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories {
+  width: 60%;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div {
+  display: flex;
+  flex-direction: column;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .title {
+  margin-bottom: 2vw;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .title h2 {
+  margin: 0;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .title h2 a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .title h2 a:hover {
+  color: #8c7462;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .title h2 a:active {
+  color: #8e6248;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .info ul {
+  margin: 0;
+  padding: 0;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .info ul li {
+  list-style-type: none;
+  margin-bottom: 1.5vw;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .info ul li a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .info ul li a:hover {
+  color: #8c7462;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .info ul li a:active {
+  color: #8e6248;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories div .info ul li a {
+  font-size: 1.2vw;
+}
+html body header .header-middle .btn_catalog .catalog .subcategories .guitars, html body header .header-middle .btn_catalog .catalog .subcategories .bowed, html body header .header-middle .btn_catalog .catalog .subcategories .drums, html body header .header-middle .btn_catalog .catalog .subcategories .percussion, html body header .header-middle .btn_catalog .catalog .subcategories .wind,
+html body header .header-middle .btn_catalog .catalog .subcategories .accordions, html body header .header-middle .btn_catalog .catalog .subcategories .studio_eq, html body header .header-middle .btn_catalog .catalog .subcategories .sound_eq, html body header .header-middle .btn_catalog .catalog .subcategories .switching, html body header .header-middle .btn_catalog .catalog .subcategories .accessories {
+  display: none;
+}
+html body header .header-middle .btn_catalog .catalog .closing button {
+  height: 20px;
+  background-color: #f2ebe9;
+  border: none;
+}
+html body header .header-middle .btn_catalog .catalog .closing button p {
+  font-size: 1.2vw;
+  color: #24150e;
+  transition: fill 0.3s ease;
+}
+html body header .header-middle .btn_catalog .catalog .closing button:hover p {
+  color: #8e6248;
+}
+html body header .header-middle .btn_catalog .catalog .closing button:active p {
+  color: #8c7462;
+}
+html body header .header-middle .btn_catalog .overlay {
+  position: fixed;
+  visibility: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.1s ease;
+}
+@media (min-width: 1024px) and (max-width: 1152px) {
+  html body header .header-middle .container {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+  html body header .header-middle .container .logo a p a p {
+    font-size: 3vw;
+  }
+  html body header .header-middle .container .catalog-search .catalog button {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  html body header .header-middle .container .catalog-search .search form {
+    height: 3.5vw;
+  }
+  html body header .header-middle .container .catalog-search .search form div input {
+    font-size: 1.5vw;
+  }
+  html body header .header-middle .container .catalog-search .search form div button svg {
+    width: 2vw;
+    height: 2vw;
+  }
+  html body header .header-middle .container .icons div a svg {
+    width: 2vw;
+  }
+  html body header .header-middle .btn_catalog .catalog {
+    width: 82%;
+  }
+  html body header .header-middle .btn_catalog .catalog .categories .content ul li a {
+    font-size: 1.4vw;
+  }
+  html body header .header-middle .btn_catalog .catalog .subcategories div .info ul li a {
+    font-size: 1.4vw;
+  }
+  html body header .header-middle .btn_catalog .catalog .closing button p {
+    font-size: 1.4vw;
+  }
+}
+html body header .header-botton {
+  display: block;
+  margin: 0.5% 12% 0.5% 12%;
+  border-radius: 0.6vw;
+  background-color: #f6f6f6;
+  padding: 0.4vw 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+html body header .header-botton ul {
+  margin: 0% 1%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+html body header .header-botton ul li {
+  list-style: none;
+}
+html body header .header-botton ul li a {
+  position: relative;
+}
+html body header .header-botton ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1vw;
+  border-radius: 0.2vw;
+  background-color: #8c7462;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+html body header .header-botton ul li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+@media (min-width: 1024px) and (max-width: 1152px) {
+  html body header .header-botton {
+    margin: 0.5% 7% 0.5% 7%;
+    font-size: 1.4vw;
+  }
+}
+html body main {
+  padding: 0;
+}
+html body main .container .main-top .main_img {
+  margin: 0;
+  padding: 0;
+  height: 45vw;
+  background-image: url("/source/main/artist-playing-guitar-close-up.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f2ebe9;
+  align-items: center;
+  text-align: center;
+}
+html body main .container .main-top .main_img .h1 h1 {
+  font-size: 6.5vw;
+  margin: 0;
+}
+html body main .container .main-top .main_img .h2 h2 {
+  margin: 1vw;
+  font-weight: 300;
+  font-size: 2.1vw;
+}
+html body main .container .main-top .main_img .h1 .h2 {
+  margin: 0;
+  padding: 0;
+}
+html body main .container .main-top .main_img .line {
+  margin: 0;
+  width: 55vw;
+  height: 0.1vw;
+  background-color: #f2ebe9;
+  border-radius: 0.1vw;
+}
+@media (min-width: 1024px) and (max-width: 1152px) {
+  html body main .container .main-top .main_img .h1 h1 {
+    font-size: 7vw;
+    margin: 0;
+  }
+  html body main .container .main-top .main_img .h2 h2 {
+    font-size: 2.4vw;
+  }
+  html body main .container .main-top .main_img .line {
+    width: 62vw;
+  }
+}
+html body main .container .main-middle {
+  margin: 0.5% 12% 0.5% 12%;
+}
+html body main .container .main-middle .popular_categories {
+  margin-top: 8vw;
+  display: flex;
+  flex-direction: column;
+}
+html body main .container .main-middle .popular_categories .name h1 {
+  margin-top: 0;
+  margin-bottom: 3vw;
+}
+html body main .container .main-middle .popular_categories .categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2vw;
+}
+html body main .container .main-middle .popular_categories .categories div {
+  width: 16vw;
+  height: 19vw;
+  overflow: hidden;
+}
+html body main .container .main-middle .popular_categories .categories div a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body main .container .main-middle .popular_categories .categories div a figure {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+html body main .container .main-middle .popular_categories .categories div a figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+html body main .container .main-middle .popular_categories .categories div a figure figcaption {
+  z-index: 22;
+  position: absolute;
+  margin: 1vw;
+  color: #f2ebe9;
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+html body main .container .main-middle .popular_categories .categories div:hover {
+  box-shadow: 0 0 1vw #8c7462;
+}
+html body main .container .main-middle .popular_categories .categories div:hover a figure img {
+  transform: scale(1.1);
+}
+html body main .container .main-middle .popular_categories .categories div:active {
+  box-shadow: 0 0 0.9vw #24150e;
+}
+html body main .container .main-middle .brends {
+  margin-top: 8vw;
+  display: flex;
+  flex-direction: column;
+}
+html body main .container .main-middle .brends .name h1 {
+  margin-top: 0;
+  margin-bottom: 3vw;
+  padding: 0;
+}
+html body main .container .main-middle .brends .name h1 a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body main .container .main-middle .brends .name h1 :hover {
+  color: #8c7462;
+}
+html body main .container .main-middle .brends .name h1 :active {
+  color: #8e6248;
+}
+html body main .container .main-middle .brends .top-brends {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2vw;
+  align-content: center;
+}
+html body main .container .main-middle .brends .top-brends div {
+  padding: 2.1vw;
+  align-content: center;
+  width: 20vw;
+}
+html body main .container .main-middle .brends .top-brends div a img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  object-fit: contain;
+}
+html body main .container .main-middle .brends .top-brends div:hover {
+  box-shadow: 0 0 1vw #f2ebe9;
+}
+html body main .container .main-middle .brends .top-brends div:hover a img {
+  transform: scale(1.1);
+}
+html body main .container .main-middle .brends .top-brends div:active {
+  box-shadow: 0 0 0.9vw #8c7462;
+}
+html body main .container .main-middle .why_us {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.7vw;
+  background-color: #f2ebe9;
+  margin-top: 8vw;
+  padding: 2vw;
+}
+html body main .container .main-middle .why_us .name h1 {
+  margin: 2vw;
+  text-align: center;
+}
+html body main .container .main-middle .why_us .content {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5vw;
+}
+html body main .container .main-middle .why_us .content div {
+  flex: 1;
+  border: 0.1vw solid #8c7462;
+  border-radius: 1.7vw;
+  color: #24150e;
+  padding: 1.2vw;
+}
+html body main .container .main-middle .why_us .content div h2 {
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 6%;
+  text-align: center;
+}
+html body main .container .main-middle .why_us .content div p {
+  font-size: 1.2vw;
+  text-align: center;
+}
+html body main .container .main-middle .about_us {
+  margin-top: 8vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2ebe9;
+  border-radius: 1.7vw;
+  padding: 3%;
+}
+html body main .container .main-middle .about_us h1 {
+  text-align: center;
+  margin: 0;
+  margin: 2vw;
+}
+html body main .container .main-middle .about_us .about_us_text {
+  border: 0.1vw solid #8c7462;
+  border-radius: 1.7vw;
+  padding: 1.2vw;
+}
+html body main .container .main-middle .about_us .about_us_text p {
+  margin: 1%;
+}
+@media (min-width: 1024px) and (max-width: 1152px) {
+  html body main .container .main-middle {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+  html body main .container .main-middle .popular_categories .categories {
+    gap: 2vw;
+  }
+  html body main .container .main-middle .popular_categories .categories div {
+    width: 19vw;
+    height: 21vw;
+  }
+  html body main .container .main-middle .popular_categories .categories div a figure figcaption {
+    font-size: 1.8vw;
+  }
+}
+html body main .container .AA_auth, html body main .container .AA_reg {
+  margin: 0.5% 12% 0.5% 12%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vw;
+}
+html body main .container .AA_auth .navigation, html body main .container .AA_reg .navigation {
+  margin-top: 2.5vw;
+}
+html body main .container .AA_auth .navigation a, html body main .container .AA_reg .navigation a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body main .container .AA_auth .navigation a:hover, html body main .container .AA_reg .navigation a:hover {
+  color: #8c7462;
+}
+html body main .container .AA_auth .navigation a:active, html body main .container .AA_reg .navigation a:active {
+  color: #8e6248;
+}
+html body main .container .AA_auth .navigation p, html body main .container .AA_reg .navigation p {
+  display: inline-block;
+}
+html body main .container .AA_auth .reg_profile, html body main .container .AA_auth .auth_profile, html body main .container .AA_reg .reg_profile, html body main .container .AA_reg .auth_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main .container .AA_auth .reg_profile .title h1, html body main .container .AA_auth .auth_profile .title h1, html body main .container .AA_reg .reg_profile .title h1, html body main .container .AA_reg .auth_profile .title h1 {
+  font-size: 3.5vw;
+  margin-bottom: 3.5vw;
+}
+html body main .container .AA_auth .reg_profile .reg_form form, html body main .container .AA_auth .reg_profile .auth_form form, html body main .container .AA_auth .auth_profile .reg_form form, html body main .container .AA_auth .auth_profile .auth_form form, html body main .container .AA_reg .reg_profile .reg_form form, html body main .container .AA_reg .reg_profile .auth_form form, html body main .container .AA_reg .auth_profile .reg_form form, html body main .container .AA_reg .auth_profile .auth_form form {
+  border: 0.15vw solid #f2ebe9;
+  border-radius: 1.7vw;
+  padding: 3%;
+  width: 50vw;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .reg_or_sign_in, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .reg_or_sign_in, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .reg_or_sign_in, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .reg_or_sign_in, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .reg_or_sign_in, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .reg_or_sign_in, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .reg_or_sign_in, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .reg_or_sign_in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2vw;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(1) p, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(1) p, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(1) p, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(1) p, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(1) p, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(1) p, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(1) p, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(1) p {
+  font-size: 1.7vw;
+  font-weight: 500;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) p, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) p, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) p, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) p, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) p, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) p, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) p, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) p {
+  display: inline-block;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a:hover, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a:hover, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a:hover, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a:hover, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a:hover, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a:hover, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a:hover, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a:hover {
+  color: #8c7462;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a:active, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a:active, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a:active, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a:active, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a:active, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a:active, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a:active, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a:active {
+  color: #8e6248;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .reg_or_sign_in div:nth-child(2) a, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .reg_or_sign_in div:nth-child(2) a {
+  text-decoration: underline;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .name-lastname, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .tel-email, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .passwords, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .email-password, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .name-lastname, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .tel-email, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .passwords, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .email-password, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .name-lastname, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .tel-email, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .passwords, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .email-password, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .name-lastname, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .tel-email, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .passwords, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .email-password, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .name-lastname, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .tel-email, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .passwords, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .email-password, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .name-lastname, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .tel-email, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .passwords, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .email-password, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .name-lastname, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .tel-email, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .passwords, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .email-password, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .name-lastname, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .tel-email, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .passwords, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .email-password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2vw;
+  margin-bottom: 1.5vw;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .name-lastname div, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .tel-email div, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .passwords div, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .email-password div, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .name-lastname div, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .tel-email div, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .passwords div, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .email-password div, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .name-lastname div, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .tel-email div, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .passwords div, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .email-password div, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .name-lastname div, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .tel-email div, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .passwords div, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .email-password div, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .name-lastname div, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .tel-email div, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .passwords div, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .email-password div, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .name-lastname div, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .tel-email div, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .passwords div, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .email-password div, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .name-lastname div, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .tel-email div, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .passwords div, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .email-password div, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .name-lastname div, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .tel-email div, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .passwords div, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .email-password div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .name-lastname div input, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .tel-email div input, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .passwords div input, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .email-password div input, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .name-lastname div input, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .tel-email div input, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .passwords div input, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .email-password div input, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .name-lastname div input, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .tel-email div input, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .passwords div input, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .email-password div input, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .name-lastname div input, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .tel-email div input, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .passwords div input, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .email-password div input, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .name-lastname div input, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .tel-email div input, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .passwords div input, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .email-password div input, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .name-lastname div input, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .tel-email div input, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .passwords div input, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .email-password div input, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .name-lastname div input, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .tel-email div input, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .passwords div input, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .email-password div input, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .name-lastname div input, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .tel-email div input, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .passwords div input, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .email-password div input {
+  width: 95%;
+  margin-top: 0.5vw;
+  background-color: #f6f6f6;
+  border-radius: 0.7vw;
+  height: 3vw;
+  padding-left: 1vw;
+  font-size: 1.2vw;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .name-lastname div input:focus, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .tel-email div input:focus, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .passwords div input:focus, html body main .container .AA_auth .reg_profile .reg_form form .profile_form .email-password div input:focus, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .name-lastname div input:focus, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .tel-email div input:focus, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .passwords div input:focus, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .email-password div input:focus, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .name-lastname div input:focus, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .tel-email div input:focus, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .passwords div input:focus, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .email-password div input:focus, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .name-lastname div input:focus, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .tel-email div input:focus, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .passwords div input:focus, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .email-password div input:focus, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .name-lastname div input:focus, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .tel-email div input:focus, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .passwords div input:focus, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .email-password div input:focus, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .name-lastname div input:focus, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .tel-email div input:focus, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .passwords div input:focus, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .email-password div input:focus, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .name-lastname div input:focus, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .tel-email div input:focus, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .passwords div input:focus, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .email-password div input:focus, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .name-lastname div input:focus, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .tel-email div input:focus, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .passwords div input:focus, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .email-password div input:focus {
+  background-color: #f2ebe9;
+  outline: none;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .submit, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .submit, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .submit, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .submit, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .submit, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .submit, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .submit, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .submit {
+  width: 100%;
+  height: 3vw;
+  border-radius: 0.7vw;
+  border: none;
+  background-color: #24150e;
+  color: #f2ebe9;
+  font-size: 1.4vw;
+  margin-bottom: 1vw;
+  font-family: "Rubik", scans-serif;
+  transition: transform 0.3s ease;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .submit:hover, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .submit:hover, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .submit:hover, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .submit:hover, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .submit:hover, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .submit:hover, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .submit:hover, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .submit:hover {
+  background-color: #3f2a1d;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .submit:active, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .submit:active, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .submit:active, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .submit:active, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .submit:active, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .submit:active, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .submit:active, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .submit:active {
+  transform: scale(0.99);
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .info, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .info, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .info, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .info, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .info, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .info, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .info, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .info {
+  text-align: center;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .info p, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .info p, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .info p, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .info p, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .info p, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .info p, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .info p, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .info p {
+  font-size: 1vw;
+}
+html body main .container .AA_auth .reg_profile .reg_form form .profile_form .info p a, html body main .container .AA_auth .reg_profile .auth_form form .profile_form .info p a, html body main .container .AA_auth .auth_profile .reg_form form .profile_form .info p a, html body main .container .AA_auth .auth_profile .auth_form form .profile_form .info p a, html body main .container .AA_reg .reg_profile .reg_form form .profile_form .info p a, html body main .container .AA_reg .reg_profile .auth_form form .profile_form .info p a, html body main .container .AA_reg .auth_profile .reg_form form .profile_form .info p a, html body main .container .AA_reg .auth_profile .auth_form form .profile_form .info p a {
+  color: #24150e;
+}
+html body main .container .AA_basket {
+  margin: 0.5% 12% 0.5% 12%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vw;
+}
+html body main .container .AA_basket .navigation {
+  margin-top: 2.5vw;
+}
+html body main .container .AA_basket .navigation a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body main .container .AA_basket .navigation a:hover {
+  color: #8c7462;
+}
+html body main .container .AA_basket .navigation a:active {
+  color: #8e6248;
+}
+html body main .container .AA_basket .navigation p {
+  display: inline-block;
+}
+html body main .container .AA_basket .basket {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body main .container .AA_basket .basket .title h1 {
+  margin-bottom: 3.5vw;
+  font-size: 3.5vw;
+}
+html body main .container .AA_basket .basket .basket_contents {
+  width: 100%;
+  height: 30vw;
+  border: 0.15vw solid #f2ebe9;
+  border-radius: 1.7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+html body main .container .AA_basket .basket .basket_contents .basket_icon svg {
+  fill: #3f2a1d;
+}
+html body main .container .AA_basket .basket .basket_contents .text {
+  text-align: center;
+}
+html body main .container .AA_basket .basket .basket_contents .text p {
+  font-size: 1.5vw;
+  color: #3f2a1d;
+}
+html body main .container .AA_favourite {
+  margin: 0.5% 12% 0.5% 12%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vw;
+}
+html body main .container .AA_favourite .navigation {
+  margin-top: 2.5vw;
+}
+html body main .container .AA_favourite .navigation a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body main .container .AA_favourite .navigation a:hover {
+  color: #8c7462;
+}
+html body main .container .AA_favourite .navigation a:active {
+  color: #8e6248;
+}
+html body main .container .AA_favourite .navigation p {
+  display: inline-block;
+}
+html body main .container .AA_favourite .favourite {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body main .container .AA_favourite .favourite .title h1 {
+  font-size: 3.5vw;
+  margin-bottom: 3.5vw;
+}
+html body main .container .AA_favourite .favourite .favourite_list {
+  width: 100%;
+  height: 30vw;
+  border: 0.15vw solid #f2ebe9;
+  border-radius: 1.7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+html body main .container .AA_favourite .favourite .favourite_list .facourite_icon svg {
+  fill: #3f2a1d;
+}
+html body main .container .AA_favourite .favourite .favourite_list .text {
+  text-align: center;
+}
+html body main .container .AA_favourite .favourite .favourite_list .text p {
+  font-size: 1.5vw;
+  color: #3f2a1d;
+}
+html body main .container .ctlg_keyboards {
+  margin: 0.5% 12% 0.5% 12%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+html body main .container .ctlg_keyboards .navigation {
+  margin-top: 30px;
+}
+html body main .container .ctlg_keyboards .navigation a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body main .container .ctlg_keyboards .navigation a:hover {
+  color: #8c7462;
+}
+html body main .container .ctlg_keyboards .navigation a:active {
+  color: #8e6248;
+}
+html body main .container .ctlg_keyboards .navigation p {
+  display: inline-block;
+}
+html body main .container .ctlg_keyboards .page_content .title h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+html body main .container .digital_pianos {
+  margin: 0.5% 12% 0.5% 12%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vw;
+}
+html body main .container .digital_pianos .navigation {
+  margin-top: 2.5vw;
+}
+html body main .container .digital_pianos .navigation a {
+  color: #3f2a1d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body main .container .digital_pianos .navigation a:hover {
+  color: #8c7462;
+}
+html body main .container .digital_pianos .navigation a:active {
+  color: #8e6248;
+}
+html body main .container .digital_pianos .navigation p {
+  display: inline-block;
+}
+html body main .container .digital_pianos .page_content .title h1 {
+  font-size: 3.5vw;
+  margin-bottom: 3.5vw;
+}
+html body main .container .digital_pianos .page_content .goods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.2vw;
+  justify-content: space-between;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product {
+  border: 0.15vw solid #f2ebe9;
+  border-radius: 1.4vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+  min-height: 25vw;
+  padding: 1vw;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .top .text {
+  width: 5vw;
+  text-align: center;
+  background-color: #3f2a1d;
+  border-radius: 0.7vw;
+  padding: 0.3vw;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .top .text p {
+  font-size: 1vw;
+  color: #f2ebe9;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .top .add_icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .top .add_icons .add_to_favourite {
+  padding-top: 0.1vw;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .top .add_icons div svg {
+  fill: #3f2a1d;
+  transition: fill 0.2s ease;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .top .add_icons :hover svg {
+  fill: #8c7462;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .top .add_icons :active svg {
+  fill: #8e6248;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .middle {
+  margin: 3vw 0 3vw 0;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .middle a img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7vw;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .bottom p:nth-child(1) {
+  font-size: 2vw;
+  font-weight: 500;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .bottom p:nth-child(2) {
+  color: #8e6248;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .bottom .replace {
+  position: relative;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .bottom .replace .name {
+  position: absolute;
+  height: 3vw;
+  font-size: 1.3vw;
+  font-weight: 300;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .bottom .replace .more_details {
+  opacity: 0;
+  position: absolute;
+  height: 3vw;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 0.7vw;
+  text-align: center;
+  font-size: 1.4vw;
+  color: #24150e;
+  text-decoration: none;
+  line-height: 3vw;
+  transition: all 0.2s ease;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .bottom .replace .more_details:hover {
+  background-color: #e9e5e2;
+}
+html body main .container .digital_pianos .page_content .goods .card_of_product .bottom .replace .more_details:active {
+  transform: scale(0.98);
+}
+html body footer {
+  margin-top: 8vw;
+  background-color: #24150e;
+  color: #f2ebe9;
+}
+html body footer .video {
+  width: 100%;
+}
+html body footer .video .subscription .video-bgr video {
+  width: 100%;
+}
+html body footer .video .subscription .content {
+  position: absolute;
+  z-index: 990;
+  margin: 0.5% 12% 0.5% 12%;
+  margin-top: 10vw;
+}
+html body footer .video .subscription .content form {
+  background-color: #f2ebe9;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  gap: 1.5vw;
+  border-radius: 1.7vw;
+  text-align: center;
+  color: #24150e;
+}
+html body footer .video .subscription .content form p:nth-child(1) {
+  font-size: 2.5vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+html body footer .video .subscription .content form p:nth-child(2) {
+  font-size: 1.4vw;
+}
+html body footer .video .subscription .content form input {
+  outline: none;
+  border: none;
+  border-bottom: 0.1vw solid #24150e;
+  font-size: 1.4vw;
+  background-color: transparent;
+  height: 3vw;
+}
+html body footer .video .subscription .content form .submit {
+  width: 100%;
+  height: 3vw;
+  border-radius: 0.7vw;
+  background-color: #3f2a1d;
+  color: #f2ebe9;
+  font-size: 1.4vw;
+  margin-bottom: 0.1vw;
+  padding: 0.3vw;
+  font-family: "Rubik", scans-serif;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+html body footer .video .subscription .content form .submit:hover {
+  background-color: #24150e;
+}
+html body footer .video .subscription .content form .submit:active {
+  transform: scale(0.99);
+}
+@media (min-width: 1024px) and (max-width: 1152px) {
+  html body footer .video .subscription .content {
+    margin: 0.5% 7% 0.5% 7%;
+    margin-top: 10vw;
+  }
+  html body footer .video .subscription .content form p:nth-child(1) {
+    font-size: 2.5vw;
+  }
+  html body footer .video .subscription .content form p:nth-child(2) {
+    font-size: 1.6vw;
+  }
+  html body footer .video .subscription .content form input {
+    font-size: 1.6vw;
+  }
+  html body footer .video .subscription .content form .submit {
+    height: 3.5vw;
+    font-size: 1.6vw;
+  }
+}
+html body footer .footer_container {
+  margin: 0.5% 12% 0.5% 12%;
+}
+html body footer .footer_container .footer-top {
+  margin-top: 2vw;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+html body footer .footer_container .footer-top div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+html body footer .footer_container .footer-top div dl {
+  display: block;
+}
+html body footer .footer_container .footer-top div dl dt {
+  margin-bottom: 1.7vw;
+  font-weight: 450;
+  font-size: 1.3vw;
+}
+html body footer .footer_container .footer-top div dl dd {
+  margin-bottom: 1.4vw;
+  margin-left: 0;
+  font-size: 1.1vw;
+  color: #b5a7a4;
+}
+html body footer .footer_container .footer-top div dl dd a {
+  color: #f2ebe9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+html body footer .footer_container .footer-top div dl dd :hover {
+  color: #8c7462;
+}
+html body footer .footer_container .footer-top div dl dd :active {
+  color: #8e6248;
+}
+html body footer .footer_container .footer-top div dl dd a {
+  color: #b5a7a4;
+}
+html body footer .footer_container .footer-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+html body footer .footer_container .footer-middle .sotial_media p {
+  color: #f2ebe9;
+  font-weight: 450;
+  font-size: 1.4vw;
+}
+html body footer .footer_container .footer-middle .icons_sotial_media {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+html body footer .footer_container .footer-middle .icons_sotial_media div a svg g {
+  fill: #f2ebe9;
+  transition: fill 0.2s ease;
+}
+html body footer .footer_container .footer-middle .icons_sotial_media :hover a svg g {
+  fill: #8c7462;
+}
+html body footer .footer_container .footer-middle .icons_sotial_media :active a svg g {
+  fill: #8e6248;
+}
+html body footer .footer_container .footer-middle .icons_sotial_media div a svg g {
+  fill: #b5a7a4;
+}
+html body footer .footer_container .footer-botton {
+  border-top: 0.1vw solid #3f2a1d;
+  padding-top: 1vw;
+  margin-top: 3vw;
+  color: #b5a7a4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body footer .footer_container .footer-botton .copyright p {
+  font-size: 1.1vw;
+}
+html body footer .footer_container .footer-botton .pay {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+}
+html body footer .footer_container .footer-botton .pay div {
+  width: 5vw;
+}
+html body footer .footer_container .footer-botton .pay div img {
+  width: 100%;
+  object-fit: contain;
+}
+@media (min-width: 1024px) and (max-width: 1152px) {
+  html body footer .footer_container {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+  html body footer .footer_container .footer-top div dl dt {
+    font-size: 1.7vw;
+  }
+  html body footer .footer_container .footer-top div dl dd {
+    font-size: 1.4vw;
+  }
+  html body footer .footer_container .footer-middle .sotial_media p {
+    font-size: 1.7vw;
+  }
+  html body footer .footer_container .footer-botton .copyright p {
+    font-size: 1.3vw;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1152px) {
+  html body main .container .AA_auth, html body main .container .AA_reg {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+  html body main .container .AA_basket {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+  html body main .container .AA_favourite {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+  html body main .container .gigital_poanos {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+  html body footer .footer_container {
+    margin: 0.5% 7% 0.5% 7%;
+  }
+}

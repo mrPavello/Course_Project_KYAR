@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<keyboards>
+    <digital_pianos>
+        <product_1>
+            <image>/source/main/casio_celviano.webp</image>
+            <price>5 655 Br</price>
+            <status>В наличии</status>
+            <name>Цифровое пианино Casio Celviano AP-270BK</name>
+            <description></description>
+        </product_1>
+        <product_2>
+            <image>/source/main/casio_privia.webp</image>
+            <price>4 152 Br</price>
+            <status>В наличии</status>
+            <name>Цифровое пианино Casio Privia PX-770BN</name>
+            <description></description>
+        </product_2>
+        <product_3>
+            <image>/source/main/becker-bdp-82r.webp</image>
+            <price>2 579 Br</price>
+            <status>В наличии</status>
+            <name>Цифровое пианино Becker BDP-82R</name>
+            <description></description>
+        </product_3>
+        <product_4>
+            <image>/source/main/korg-lp-380-bk-u.webp</image>
+            <price>5 112 Br</price>
+            <status>В наличии</status>
+            <name>Цифровое пианино Korg LP-380U BK</name>
+            <description></description>
+        </product_4> 
+        <product_5>
+            <image>/source/main/medeli-cp203-bk-1.webp</image>
+            <price>2 447 Br</price>
+            <status>В наличии</status>
+            <name>Цифровое пианино Medeli CP203-BK</name>
+            <description></description>
+        </product_5> 
+        <product_6>
+            <image>/source/main/nux_wk-310_1.webp</image>
+            <price>2 099 Br</price>
+            <status>В наличии</status>
+            <name>Цифровое пианино Nux WK-310</name>
+            <description></description>
+        </product_6> 
+        <product_7>
+            <image>/source/main/orla-cdp1-rosewood.webp</image>
+            <price>2 331 Br</price>
+            <status>В наличии</status>
+            <name>Цифровое пианино Orla CDP 1 Rosewood</name>
+            <description></description>
+        </product_7> 
+        <product_8>
+            <image>/source/main/kurzweil-m90-sr-1.webp</image>
+            <price>2 999 Br</price>
+            <status>В наличии</status>
+            <name>Цифровое пианино Kurzweil M90 SR</name>
+            <description></description>
+        </product_8> 
+    </digital_pianos>
+    

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Pavel Redzko" description="Интернет-магазин музыкальных инструментов">
+    <meta keyeords="музыуальные инструменты">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">    
+    <link rel="stylesheet" href="css/style.css">
+    <title>AccordArt</title>
+    
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+
+                <div class="location">
+                    <a target="_blanck" href="https://yandex.ru/maps/?text={Минск}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1vw" height="1vw" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                        <p>Минск, ул. Островского 14</p>
+                    </a>
+                </div>
+                <div class="tel">
+                    <a href="tel: +375257781236">
+                        <p>+375 (25) 778-12-36</p>
+                    </a>
+                </div>
+                <div class="email">
+                    <a href="mailto:shop@accordart.by">
+                        <p>shop@accordart.by</p>
+                    </a>
+                </div>
+                <div class="work_time">
+                    <p>Пн—пт: 9:00-18:00</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="container">
+                <div class="logo">
+                    <a href="AccordArt.html">
+                        <p>Accord<span>Art</span></p>
+                    </a>
+                </div>
+                <div class="catalog-search">
+                    <div class="catalog">
+                        <button tabindex="0" id="btn_catalog_open">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.8vw" height="1.8vw" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <div>
+                                <input placeholder="Поиск..." autocomplete="off">
+                                <button>
+                                    <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                                </button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div>
+                        <a href="AA_favourite.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.6vw" height="1.6vw" fill="currentColor" class="bi bi-heart" viewBox="0 0 17 15">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="AA_basket.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5vw" height="1.5vw" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/AA_reg.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.9vw" height="1.9vw" fill="currentColor" class="bi bi-person" viewBox="0 0 18 18">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_catalog" id="btn_catalog">
+                <div class="catalog" id="catalog">
+                    <div class="categories">
+                        <div class="content">
+                            <ul>
+                                <li id="keyboards">
+                                    <a href="javascript:vpid(0)">Клавишные</a>
+                                </li>
+                                <li id="guitars"> 
+                                    <a href="javascript:vpid(0)">Гитары</a>
+                                </li>
+                                <li id="bowed">
+                                    <a href="javascript:vpid(0)">Смычковые</a>
+                                </li>
+                                <li id="drums">
+                                    <a href="javascript:vpid(0)">Ударные</a>
+                                </li>
+                                <li id="percussion">
+                                    <a href="javascript:vpid(0)">Перкуссия</a>
+                                </li>
+                                <li id="wind">
+                                    <a href="javascript:vpid(0)">Духовые</a>
+                                </li>
+                                <li id="accordions">
+                                    <a href="javascript:vpid(0)">Аккордеоны и гармонии</a>
+                                </li>
+                                <li id="studio_eq">
+                                    <a href="javascript:vpid(0)">Студийное оборудование</a>
+                                </li>
+                                <li id="sound_eq">
+                                    <a href="javascript:vpid(0)">Звуковое оборудование</a>
+                                </li>
+                                <li id="switching">
+                                    <a href="javascript:vpid(0)">Коммутация</a>
+                                </li>
+                                <li id="accessories">
+                                    <a href="javascript:vpid(0)">Аксессуары</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subcategories">
+                        <div class="keyboards">
+                            <div class="title">
+                                <h2>
+                                    <a href="keyboards.html">Клавишные</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Акустические пианино</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Акустические рояли</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Синтезаторы</a>
+                                    </li>
+                                    <li>
+                                        <a href="digital_pianos.html">Цифровые пианино</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Цифровые рояли</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">MIDI-клавиатуры</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Цифровые органы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="guitars">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Гитары</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Акустические гитры</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Полу-акустические гитары</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Классические гитары</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">12-струнные гитары</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Электрогитары</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Электро-акустичесике гитары</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Бас-гитары</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Элктро-акустические бас-гитары</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Педали эффектов</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Гитарные аксессуары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bowed">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Смычковые</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Скрипки</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Электро-скрипки</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Альты</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Виолончели</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Контрабасы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Электро-контрабасы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Аксессуары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="drums">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Ударные</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Акустические ударные установки</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Детские ударные установки</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Аксессуары и комплектующие</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Фурнитура для ударные инструментов</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Тренировочные барабаны, пэды</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="percussion">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Перкуссия</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Бубны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Кахоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Конги</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Металлофоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Тамбурины</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Шейкеры</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Ксилофоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Прочая перкуссия</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wind">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Духовые</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Тромбоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Валторны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Саксофоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Кларнеты</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Флейты</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Трубы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Баритоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Аксессуары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordions">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Аккордионы и гармонии</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Аккордеоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Баяны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Гармонии</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Концертины</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Аксессуары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="studio_eq">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Студийоное оборудованиие</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Наушники</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Рекордеры</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сэмплеры</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Эффекторы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Мониторы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Мебель для студии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sound_eq">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Звуковое оборудованиие</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Акустические системы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Эквалайзеры</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Усилители мощности</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Микшеры</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сабвуферы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Кроссоверы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Линейные массивы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Микрофоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Аксессуары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="switching">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Коммутация</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Готовые кабели</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Кабели в бухтах</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Мультикоры</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Разъемы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Переходники</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Катушки для кабелей</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accessories">
+                            <div class="title">
+                                <h2>
+                                    <a href="javascript:void(0)">Аксессуары</a>
+                                </h2>
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Метрономы</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Дирижерские палочки</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Инструменты для мастеров</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Элементы питания</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="closing">
+                        <button id="btn_close">
+                            <p>&#x2715;</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+            </div>
+        </div>
+        
+        <div class="header-botton" id="header-bottom">
+            <ul>
+                <li><a href="javascript:void(0)">Акции</a></li>
+                <li><a href="javascript:void(0)">Доставка</a></li>
+                <li><a href="javascript:void(0)">Отзывы</a></li>
+                <li><a href="javascript:void(0)">Услуги</a></li>
+                <li><a href="javascript:void(0)">Бренды</a></li>
+                <li><a href="javascript:void(0)">О магазине</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="AA_auth">
+                <div class="navigation">
+                    <a href="/AccordArt.html">
+                        Главная
+                    </a>
+                    <a>
+                        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.84027 0.335938L7.06427 3.61594L4.84027 6.92794H3.44827L5.54427 3.61594L3.44827 0.335938H4.84027ZM5.86427 3.03994V4.20794H0.0722656V3.03994H5.86427Z" fill="#CDCDCD"></path>
+                        </svg>
+                    </a>
+                    <a>
+                        Авторизация
+                    </a>
+                </div>
+                <div class="auth_profile">
+                    <div class="title">
+                        <h1>Войти</h1>
+                    </div>
+                    <div class="auth_form">
+                        <form action="javascript:void(0)">
+                            <div class="profile_form">
+                                <div class="reg_or_sign_in">
+                                    <div>
+                                        <p>Вход в личный кабинет</p>
+                                    </div>
+                                    <div>
+                                        <p>Нет профиля?</p>
+                                        <a href="/AA_reg.html">Зарегестрируйтесь</a>
+                                    </div>
+                                </div>
+                                <div class="email-password">
+                                    <div class="input-email">
+                                        <label>Почта</label>
+                                        <input type="email" name="email" placeholder="example@gmail.com" autocomplete="off">
+                                    </div>
+                                    <div class="input-password">
+                                        <label>Пароль</label>
+                                        <input type="password" name="password">
+                                    </div>
+                                </div>
+                                <input class="submit" type="submit" value="Войти">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="video">
+            <div class="subscription">
+                <div class="content">
+                    <form id="subscription_form" novalidate="novalidate">
+                        <p>подпишитесь на рассылку</p>
+                        <p>И получите скидку 15% на первый заказ</p>
+                        <input type="text" name="name" placeholder="Имя" autocomplete="off">
+                        <input type="email" name="email" placeholder="E-mail" autocomplete="off">
+                        <input type="button" value="Подписаться" class="submit">
+                        <p>Будьте в курсе всех акций, поступлений, <br>новостей и получите доступ к закрытым скидкам!</p>
+                    </form>
+                </div>
+                <div class="video-bgr">
+                    <video id="video" src="/source/footer/video_piano.mp4" autoplay></video>
+                </div>
+            </div>
+        </div>
+        <div class="footer_container">
+            <div class="footer-top">
+                <div class="about_us">
+                    <dl>
+                        <dt>О НАС</dt>
+                        <dd>
+                            <a href="#">О магазине</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Отзывы</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Контакты</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Вопрос-ответ</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="shop">
+                    <dl>
+                        <dt>МАГАЗИН</dt>
+                        <dd>
+                            <a href="#">Скидки</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Бренды</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Доставка и оплата</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Рассрочка</a>
+                        </dd>
+                        <dd>
+                            <a href="#">Как сделать заказ</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="contacts">
+                    <dl>
+                        <dt>КОНТАКТЫ</dt>
+                        <dd>
+                            <a target="_blanck" href="https://yandex.ru/maps/?text={Минск}">Минск, ул. Островского 14</a>
+                        </dd>
+                        <dd>
+                            <a href="mailto:shop@accordart.by">shop@accordart.by</a>
+                        </dd>
+                        <dd>
+                            <a href="tel: +375257781236">+375 (25) 778-12-36</a>
+                        </dd>
+                        <dd>
+                            <a href="tel: +375297781546">+375 (29) 778-15-46</a>
+                        </dd>
+                        <dd>
+                            <a href="tel: +375447782344">+375 (44) 778-23-44</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="working_hours">
+                    <dl>
+                        <dt>ВРЕМЯ РАБОТЫ</dt>
+                        <dd>Пн—пт: 9:00-18:00</dd>
+                        <dd>Сб—вс: 9:00-16:00</dd>
+                        <dd>Доставка товаров:<br> 10:00-18:00</dd>
+                        <dd>Оставить онлайн заказ можно круглосуточно</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="sotial_media">
+                    <p>МЫ В СОЦСЕТЯХ</p>
+                </div>
+                <div class="icons_sotial_media">
+                    <div class="telegram">
+                        <a href="javascript:void(0);">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3vw" height="3vw" viewBox="0,0,256,256">
+                                <g fill="#ffffff"  stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.69071,0 -23,10.3093 -23,23c0,12.6907 10.30929,23 23,23c12.69071,0 23,-10.3093 23,-23c0,-12.6907 -10.30929,-23 -23,-23zM25,4c11.60983,0 21,9.39017 21,21c0,11.60983 -9.39017,21 -21,21c-11.60983,0 -21,-9.39017 -21,-21c0,-11.60982 9.39017,-21 21,-21zM34.08789,14.03516c-0.684,0 -1.45256,0.15842 -2.35156,0.48242c-1.396,0.503 -17.81559,7.47458 -19.68359,8.26758c-1.068,0.454 -3.05664,1.2985 -3.05664,3.3125c0,1.335 0.78227,2.28984 2.32227,2.83984c0.828,0.295 2.79455,0.89108 3.93555,1.20508c0.484,0.133 0.99834,0.20117 1.52734,0.20117c1.035,0 2.07658,-0.25789 2.89258,-0.71289c-0.007,0.168 -0.00242,0.33781 0.01758,0.50781c0.123,1.05 0.77047,2.03758 1.73047,2.64258c0.628,0.396 5.75744,3.83291 6.52344,4.37891c1.076,0.769 2.2655,1.17578 3.4375,1.17578c2.24,0 2.99152,-2.31283 3.35352,-3.42383c0.525,-1.613 2.49089,-14.72997 2.71289,-17.04297c0.151,-1.585 -0.50958,-2.89019 -1.76758,-3.49219c-0.471,-0.227 -1.00875,-0.3418 -1.59375,-0.3418zM34.08789,16.03516c0.275,0 0.52052,0.04548 0.72852,0.14648c0.473,0.227 0.71363,0.73305 0.64063,1.49805c-0.242,2.523 -2.20309,15.32928 -2.62109,16.61328c-0.358,1.098 -0.73512,2.04297 -1.45313,2.04297c-0.718,0 -1.50239,-0.25169 -2.27539,-0.80469c-0.773,-0.552 -5.90614,-3.99436 -6.61914,-4.44336c-0.625,-0.394 -1.28647,-1.37617 -0.35547,-2.32617c0.767,-0.782 6.58503,-6.42878 7.08203,-6.92578c0.37,-0.371 0.19698,-0.81836 -0.16602,-0.81836c-0.125,0 -0.27469,0.05269 -0.42969,0.17969c-0.608,0.497 -9.08436,6.169 -9.81836,6.625c-0.486,0.302 -1.23853,0.51953 -2.01953,0.51953c-0.333,0 -0.67014,-0.03991 -0.99414,-0.12891c-1.128,-0.311 -3.03692,-0.89016 -3.79492,-1.16016c-0.729,-0.26 -0.99414,-0.50908 -0.99414,-0.95508c0,-0.634 0.89489,-1.07166 1.83789,-1.47266c0.996,-0.423 18.23012,-7.74156 19.57812,-8.22656c0.624,-0.226 1.19483,-0.36328 1.67383,-0.36328z"></path></g></g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="javascript:void(0);">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3vw" height="3vw" viewBox="0,0,256,256">
+                                <g fill="#ffffff" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="facebook">
+                        <a href="javascript:void(0);">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3vw" height="3vw" viewBox="0,0,256,256">
+                                <g fill="#ffffff" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.13844,0 -22,9.86156 -22,22c0,11.01913 8.12753,20.13835 18.71289,21.72852l1.14844,0.17383v-17.33594h-5.19727v-3.51953h5.19727v-4.67383c0,-2.87808 0.69065,-4.77363 1.83398,-5.96289c1.14334,-1.18926 2.83269,-1.78906 5.18359,-1.78906c1.87981,0 2.61112,0.1139 3.30664,0.19922v2.88086h-2.44727c-1.38858,0 -2.52783,0.77473 -3.11914,1.80664c-0.59131,1.03191 -0.77539,2.264 -0.77539,3.51953v4.01758h6.12305l-0.54492,3.51953h-5.57812v17.36523l1.13477,-0.1543c10.73582,-1.45602 19.02148,-10.64855 19.02148,-21.77539c0,-12.13844 -9.86156,-22 -22,-22zM25,5c11.05756,0 20,8.94244 20,20c0,9.72979 -6.9642,17.7318 -16.15625,19.5332v-12.96875h5.29297l1.16211,-7.51953h-6.45508v-2.01758c0,-1.03747 0.18982,-1.96705 0.50977,-2.52539c0.31994,-0.55834 0.62835,-0.80078 1.38477,-0.80078h4.44727v-6.69141l-0.86719,-0.11719c-0.59979,-0.08116 -1.96916,-0.27148 -4.43945,-0.27148c-2.7031,0 -5.02334,0.73635 -6.625,2.40234c-1.60166,1.66599 -2.39258,4.14669 -2.39258,7.34961v2.67383h-5.19727v7.51953h5.19727v12.9043c-9.04433,-1.91589 -15.86133,-9.84626 -15.86133,-19.4707c0,-11.05756 8.94244,-20 20,-20z"></path></g></g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="youtube">
+                        <a href="javascript:void(0);">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3vw" height="3vw" viewBox="0,0,256,256">
+                                <g fill="#ffffff" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M24.40234,9c-6.60156,0 -12.80078,0.5 -16.10156,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.39844,2.39844 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.50391,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.59766,-0.5 16.09766,-1.19922c2.20313,-0.5 4.10156,-2 4.5,-4.30078c0.40234,-2.5 0.90234,-6.09766 1,-10.59766c0,-4.5 -0.5,-8.10156 -1,-10.60156c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.5,-0.5 -9.59766,-1 -16.19531,-1zM24.40234,11c7.19922,0 12.99609,0.59766 15.79688,1.09766c1.5,0.40234 2.69922,1.40234 2.89844,2.70313c0.60156,3.19922 1,6.60156 1,10.10156c-0.09766,4.29688 -0.59766,7.79688 -1,10.29688c-0.29687,1.89844 -2.29687,2.5 -2.89844,2.70313c-3.60156,0.69922 -9.60156,1.19531 -15.60156,1.19531c-6,0 -12.09766,-0.39844 -15.59766,-1.19531c-1.5,-0.40234 -2.69922,-1.40234 -2.89844,-2.70312c-0.80078,-2.80078 -1.10156,-6.5 -1.10156,-10.19922c0,-4.60156 0.40234,-8 0.80078,-10.09766c0.30078,-1.90234 2.39844,-2.50391 2.89844,-2.70312c3.30078,-0.69922 9.40234,-1.19922 15.70313,-1.19922zM19,17v16l14,-8zM21,20.40234l8,4.59766l-8,4.59766z"></path></g></g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="vk">
+                        <a href="javascript:void(0);">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3vw" height="3vw" viewBox="0,0,256,256">
+                                <g fill="#ffffff" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.6907,0 -23,10.3093 -23,23c0,12.69071 10.3093,23 23,23c12.69071,0 23,-10.30929 23,-23c0,-12.6907 -10.30929,-23 -23,-23zM25,4c11.60982,0 21,9.39018 21,21c0,11.60982 -9.39018,21 -21,21c-11.60982,0 -21,-9.39018 -21,-21c0,-11.60982 9.39018,-21 21,-21zM15.00195,18l-4.03516,0.00195c0,0 -0.2309,-0.01301 -0.50977,0.02344c-0.27887,0.03645 -0.69084,0.05337 -1.11328,0.53125l-0.00195,0.00195l-0.00195,0.00195c-0.37576,0.42972 -0.36143,0.92987 -0.31445,1.20508c0.0468,0.2742 0.15157,0.47895 0.15234,0.48047v0.00195c0.0388,0.09518 2.96864,7.27388 6.66211,11.13086c2.60525,2.72238 5.39156,3.62109 7.87305,3.62109h1.28711c0.42346,0 0.80165,-0.01927 1.2207,-0.23633c0.41905,-0.21706 0.7793,-0.8161 0.7793,-1.28125c0,-0.50117 0.01231,-0.98702 0.07617,-1.25781c0.05965,-0.25289 0.03663,-0.19082 0.06055,-0.19141c0.02397,0.0052 0.06761,0.01531 0.15039,0.05273c0.17839,0.08065 0.45404,0.26069 0.75977,0.49805c0.6105,0.47396 1.33363,1.16157 2.14453,1.69336c1.16145,0.76978 2.42188,0.72266 2.42188,0.72266h4.15625l0.04492,-0.00391c0,0 0.63776,-0.0145 1.29297,-0.41602c0.32761,-0.20076 0.71694,-0.56904 0.84766,-1.12109c0.13072,-0.55205 -0.03619,-1.13124 -0.35742,-1.64062c-0.11735,-0.18684 -0.68702,-1.01248 -2.96094,-3.03125c-0.58746,-0.52102 -0.98808,-0.88983 -1.14648,-1.08594c-0.05624,-0.06962 -0.06095,-0.0629 -0.07227,-0.06641c0.01325,-0.03419 0.14463,-0.31086 0.49609,-0.76758c0.3663,-0.47601 0.92293,-1.13924 1.63867,-2.05078c0.91224,-1.16219 1.5523,-2.2797 1.95508,-3.22266c0.20139,-0.47148 0.34415,-0.89929 0.42969,-1.28711c0.08554,-0.38781 0.1538,-0.71017 0.02734,-1.16992c-0.09432,-0.34223 -0.35047,-0.64875 -0.60156,-0.81055c-0.25109,-0.1618 -0.48519,-0.22274 -0.69531,-0.26172c-0.42025,-0.07796 -0.79103,-0.06445 -1.13672,-0.06445c-0.72381,0 -3.94144,0.02539 -4.20703,0.02539c-0.31171,0 -0.80896,0.12981 -1.03906,0.26172c-0.57127,0.32716 -0.75,0.77539 -0.75,0.77539l-0.05469,0.0957l-0.03125,0.10742c0,0 -0.73269,2.3702 -1.48633,3.5918h-0.00195c-0.88619,1.43911 -1.54723,2.00995 -1.83789,2.17188c-0.03087,0.0172 -0.01377,0.00806 -0.03516,0.01953c-0.02273,-0.06621 -0.05142,-0.15738 -0.07031,-0.32617c-0.04251,-0.38023 -0.01758,-0.91569 -0.01758,-1.43359c0,-1.43442 0.10772,-2.32888 -0.01172,-3.17578c-0.05972,-0.42345 -0.21176,-0.89502 -0.55859,-1.25781c-0.34683,-0.36279 -0.79482,-0.54137 -1.24219,-0.64453h-0.00195c-0.46623,-0.10737 -0.96868,-0.19958 -2.17578,-0.21094c-1.538,-0.01434 -2.53965,0.03334 -3.42969,0.42969l-0.00977,0.00586l-0.00781,0.00391c-0.35167,0.16519 -0.6289,0.35454 -0.87305,0.60742c-0.12207,0.12644 -0.2669,0.21852 -0.36719,0.62109c-0.05015,0.20129 -0.05565,0.58212 0.17188,0.89063c0.22752,0.3085 0.54638,0.40155 0.73438,0.42578c-0.03468,-0.0045 0.1479,0.03568 0.28906,0.10547c0.14116,0.06979 0.26372,0.17028 0.29492,0.21094v0.00195c-0.01305,-0.01695 0.1225,0.31991 0.1582,0.62695c0.0357,0.30704 0.0293,0.55469 0.0293,0.55469l-0.00195,0.06055l0.00586,0.06055c0,0 0.06139,0.67946 0.0293,1.38086c-0.01605,0.3507 -0.06038,0.70369 -0.11914,0.91992c-0.00311,0.01144 -0.00453,0.00743 -0.00781,0.01758c-0.25037,-0.17486 -0.8277,-0.78414 -1.62305,-2.09766c-0.73523,-1.21506 -1.42383,-3.40039 -1.42383,-3.40039l-0.01562,-0.04883l-0.01758,-0.04687c0,0 -0.12838,-0.48818 -0.69531,-0.88672c-0.53138,-0.37408 -1.03711,-0.42578 -1.03711,-0.42578zM14.76953,20c0.0572,0.02091 0.17678,0.064 0.19922,0.07422l-0.02344,-0.07031c0,0 0.03079,0.0707 0.03125,0.07227c0.00025,0.00014 0.00381,0.00185 0.00391,0.00195v0.00195h0.00195c-0.05026,-0.03516 -0.00765,-0.00026 -0.00195,0.00781c0.02762,0.09423 0.63822,2.19753 1.5918,3.77344c0.86868,1.43462 1.51045,2.23833 2.21094,2.71875c0.69981,0.47995 1.64083,0.43049 2.11914,0.18164c0.63923,-0.33197 0.81791,-0.87758 0.94141,-1.33203c0.12349,-0.45445 0.16755,-0.91551 0.1875,-1.35156c0.03807,-0.83199 -0.02704,-1.51259 -0.0332,-1.58008c0.001,-0.03759 0.0099,-0.36265 -0.04102,-0.80078c-0.05133,-0.44148 -0.14334,-0.99011 -0.53516,-1.54102c0.43889,-0.06521 0.68256,-0.16451 1.56836,-0.15625c1.12964,0.01063 1.30148,0.05776 1.74609,0.16016c0.24214,0.05584 0.26902,0.1021 0.24609,0.07813c-0.02292,-0.02398 -0.002,-0.04 0.02539,0.1543c0.05482,0.3885 -0.00781,1.3849 -0.00781,2.89648c0,0.4261 -0.04114,1.02698 0.0293,1.65625c0.07039,0.62887 0.26694,1.43353 1.02734,1.9043c0.43326,0.26814 1.26093,0.36036 2.04102,-0.07422c0.78009,-0.43458 1.5806,-1.26825 2.56641,-2.86914c0.97379,-1.57844 1.55613,-3.65369 1.61914,-3.87305c0,0 0.01111,-0.00722 0.01758,-0.01172c0.01767,0.00085 -0.00481,0.00391 0.02344,0.00391c0.37041,0 3.53084,-0.02539 4.20703,-0.02539c0.18603,0 0.26771,0.01001 0.40625,0.01563c-0.05599,0.2159 -0.13126,0.46732 -0.26953,0.79102c-0.32497,0.7608 -0.8827,1.74758 -1.68945,2.77539c-0.69526,0.88546 -1.2354,1.52771 -1.64844,2.06445c-0.41304,0.53674 -0.73752,0.96011 -0.87305,1.57227c-0.13553,0.61216 0.12306,1.30259 0.47656,1.74023c0.3535,0.43764 0.79096,0.80624 1.375,1.32422c2.20009,1.95323 2.56106,2.54445 2.5957,2.59961v0.00195c0.03715,0.05891 0.01306,-0.00034 0.02734,0.0293c-0.12475,0.03889 -0.27323,0.08287 -0.28711,0.08594h-4.04687h-0.00586c0,0 -0.74432,-0.0244 -1.29687,-0.39062l-0.00195,-0.00195h-0.00195c-0.58455,-0.38287 -1.29104,-1.03947 -2.01758,-1.60352c-0.36327,-0.28202 -0.73313,-0.54629 -1.16211,-0.74023c-0.42898,-0.19394 -0.97268,-0.33144 -1.54492,-0.16016c-0.82826,0.2479 -1.28791,1.03615 -1.43555,1.66211c-0.10598,0.44934 -0.09031,0.8401 -0.09375,1.23242c-0.02853,0.0015 -0.00384,0.00195 -0.03711,0.00195h-1.28711c-2.03251,0 -4.147,-0.62047 -6.42773,-3.00391c-2.96517,-3.09644 -5.61069,-9.08449 -6.00781,-9.99414zM32.21289,20.00781c-0.01815,0.00404 0.03377,0.00796 0.07617,0.01172c-0.00574,0.00311 0.00049,-0.00275 -0.00781,0.00195c-0.00084,-0.01671 -0.04396,-0.01911 -0.06836,-0.01367z"></path></g></g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-botton">
+                <div class="copyright">
+                    <p>&copy 2024 Магазин "AccordArt"</p>
+                    <p>Разработка и поддержка: Павел Редько</p>
+                </div>
+                <div class="pay">
+                    <div>
+                        <img src="source/footer/payment/pay01.png">
+                    </div>
+                    <div>
+                        <img src="source/footer/payment/pay02.png">
+                    </div>
+                    <div>
+                        <img src="source/footer/payment/pay03.png">
+                    </div>
+                    <div>
+                        <img src="source/footer/payment/pay04.png">
+                    </div>
+                    <div>
+                        <img src="source/footer/payment/pay05.png">
+                    </div>
+                    <div>
+                        <img src="source/footer/payment/pay06.png">
+                    </div>
+                    <div>
+                        <img src="source/footer/payment/pay07.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>
